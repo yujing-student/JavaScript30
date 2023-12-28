@@ -38,7 +38,18 @@
     
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    const result = inventors.filter(checkAdult);
+    console.log(result);
+    function checkAdult(inventors) {
+      if(inventors.year <1500){
 
+        console.log('deze mensen zijn voor 1500 geboren',inventors);
+
+      }
+      else {
+        // console.log('deze mensen zijn niet voor 1500 geboren',inventors);
+      }
+    }
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
 
